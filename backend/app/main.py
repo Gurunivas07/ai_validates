@@ -416,3 +416,10 @@ def export_zip():
                 archive.write(full, os.path.relpath(full, root))
     memory.seek(0)
     return StreamingResponse(memory, media_type="application/zip", headers={"Content-Disposition": "attachment; filename=ai-app-react-fastapi.zip"})
+@app.get("/")
+def root():
+    return {
+        "message": "AI Validates FastAPI backend is running",
+        "docs": "/docs",
+        "api": "/api"
+    }
