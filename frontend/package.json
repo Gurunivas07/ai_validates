@@ -13,10 +13,12 @@
     "@vitejs/plugin-react": "latest",
     "lucide-react": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "vite": "latest"
+    "react-dom": "latest"
   },
   "engines": {
-  "node": "20.x"
-}
+    "node": "20.x"
+  },
+  "devDependencies": {
+    "vite": "^8.0.14"
+  }
 }
